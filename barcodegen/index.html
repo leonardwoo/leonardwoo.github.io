@@ -1,0 +1,68 @@
+﻿﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<link rel="stylesheet" href="../css/styles.css" />
+<link rel="stylesheet" href="../css/pygment_trac.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<!--[if lt IE 9]>
+<script src="../js/html5.js"></script>
+<![endif]-->
+<title>Barcode Generate</title>
+</head>
+<body>
+<div class="wrapper">
+<header>
+<h1>Barcode Generate</h1>
+<p>二維碼生成器</p>
+
+ <p class="view">如果在使用中出現任何問題,請<a href="mailto:leo@matoro.net">戳這個</a>告訴我.</p>
+</header>
+<section>
+<h2>Introduction</h2>
+  <p>雖然現在有超多的在線生成二維碼的工具,但是網絡不好用的時候就不能用那些在線服務了.</p>
+  <p><strong>感謝<a href="http://zxing.org/">ZXing</a>提供生成支持.</strong><br />
+    <em>需要.Net Framework 4.5支持.</em></p>
+<h2>Screenshot</h2>
+<p><img src="../images/screenshot-c0b70fe9f75aeed2cac0a1bb30da4f8d.png" style="width:200px;" />&nbsp;
+  <img src="../images/screenshot-ba0abab3c858d91a7ba30bf41d177718.png" style="width:200px;" />&nbsp;
+  <img src="../images/screenshot-6a2464a88c7cfb28ca567668bbc8711c.png" style="width:200px;" />&nbsp;
+  <img src="../images/screenshot-6d7d5c66a9cd6e9087a0d9bd6c7b1816.png" style="width:200px;" />&nbsp;
+  <img src="../images/screenshot-4d18b1e03d08606ed727e4ff668ba7d2.png" style="width:200px;" />&nbsp;
+  <img src="../images/screenshot-35d7512d5a06c0681caf96b304e8831f.png" style="width:200px;" />&nbsp;
+  <img src="../images/screenshot-c5bea81aa0c3b4f858130c2200522e41.png" style="width:200px;" />
+  </p>
+<h2>Notes</h2>
+<p>
+1. 生成前需要正確設置編碼,不識別的文字會被變成 ? <br />
+2. 以後版本會支持更多格式的QR(例如電話,vCard,SMS等),還有其他的二維碼(例如 DataMatrix)將會被支持.<br />
+3. 文本區如果為空點擊生成會出現.Net錯誤.
+</p>
+<h2>Changlog</h2>
+<p>v1.0 4th Mar 2014<br />
+1. 簡單的QR碼生成器.<br />
+2. 支持文本格式(其他格式需自行拼接字符串)<br />
+3. 自定義生成尺寸.<br />
+4. 寬高如果只設置一個會自動填充到另一個.默認是300*300<br />
+5. 支持ISO 8859-1\UTF-8\Big5\Shift_JIS編碼.<br />
+6. 支持保存到文件(默認是PNG.可以選擇保存成JPG,但是手動需要添加後綴名).
+</p>
+<p>v1.1 11 Nov 2014<br />
+1. 增加DataMatrix生成支持.(DataMatrix僅支持ASCII<i>(ISO 8859-1)</i>編碼)<br />
+2. 可保存為GIF格式<br />
+3. 修復Bug.
+</p>
+<h2>Downloads</h2>
+<p><a href="http://go.microsoft.com/fwlink/?LinkId=225702">Microsoft .NET Framework 4.5</a></p>
+<p>BarcodeGen v1.0<br /><a href="http://pan.baidu.com/s/1i3FT6r7">百度網盤</a>&nbsp;&nbsp;&nbsp;
+  <a href="http://yunpan.cn/Q46qBsSDPAj2T">360雲盤</a></p>
+<p>BarcodeGen v1.1<br /><a href="http://vdisk.weibo.com/s/tORxSZ7mDcKO">微盤</a></p>
+</section>
+<footer>
+<p>Powered By <a href="https://www.github.com">Github Pages</a></p>
+<p><small>Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+<script src="../js/scale.fix.js"></script>
+</footer>
+</body>
+</html>

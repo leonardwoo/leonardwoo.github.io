@@ -1,1 +1,3 @@
-# l6d-project.github.io
+# Leonard Projects
+
+http://projects.l6d.me/
