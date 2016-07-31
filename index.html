@@ -1,25 +1,91 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
- <head>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-  <!--[if lt IE 9]>
-  <script src="/js/html5.js"></script>
-  <![endif]-->
   <title>Leonard Project Pages | Github Pages</title>
- </head>
- <body style="padding: 0 10px;">
-  <h1 style="text-align:center;">Welcome!</h1>
-  <p>There are my project pages:</p>
-  <ul>
-   <li><a href="sendmail/">SendMail</a></li>
-   <li><a href="barcodegen/">Barcode Generate</a></li>
-   <li><a href="//www.paboo.org/pchart/">pChart</a></li>
-  </ul>
-  <p>Some bate toolkit is <a href="http://pan.baidu.com/s/1i3oTkSt">here</a>.</p>
+  <style>
+@import "https://fonts.googleapis.com/css?family=Lato:300,400";
+@import "css/normalize.min.css";
+html {
+  font-size: 14px;
+}
+body {
+  background-color: #AAA；
+  font:1em/1.5 Lato, Helvetica, Arial, sans-serif;
+  color:#333;
+  font-weight:300;
+}
+header {
+  width: 100%;
+}
+header .image-logo {
+  padding-top: 15%;
+}
+#logo {
+  width: 80px;
+}
+.container {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.25em;
+}
+.box {
+  width: 300px;
+  text-align: left;
+  margin: 0 auto;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  font-size: 1.25em;
+  width: 100%;
+}
+footer div {
+  margin-left: 3%;
+  margin-bottom: 1%;
+}
+footer p {
+  margin: 0;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="image-logo container">
+      <img id="logo" src="logo.png" />
+    </div>
+  </header>
+  <section>
+    <article class="container">
+      <div><h1>Welcome!</h1></div>
+    </article>
+    <article class="container">
+      <div class="box">
+        <p>There are my project pages</p>
+        <ul>
+         <li><a href="sendmail/">SendMail</a></li>
+         <li><a href="barcodegen/">Barcode Generate</a></li>
+         <li><a href="//www.paboo.org/pchart/">pChart</a></li>
+        </ul>
+      </div>
+    </article>
+    <article class="container">
+      <div class="box">
+        <p>Some bate toolkit is <a href="http://pan.baidu.com/s/1i3oTkSt">here</a>.</p>
+      </div>
+    </article>
+  </section>
   <footer>
-  <p>Powered by <a href="https://www.github.com">Github Pages</a></p>
+    <div>
+      <p>Powered by <a href="https://www.github.com">Github Pages</a>.</p>
+      <p>Design By <a href="http://l6d.me/">Leonard</a>.</p>
+    </div>
   </footer>
- </body>
+</body>
 </html>
