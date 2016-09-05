@@ -12,23 +12,29 @@ html {
   font-size: 14px;
 }
 body {
-  background-color: #AAA；
+  background-color: #EEE;
   font:1em/1.5 Lato, Helvetica, Arial, sans-serif;
   color:#333;
   font-weight:300;
+}
+a {
+  color: #333;
+  text-decoration:none;
+}
+a:hover {
+  font-weight: 400;
 }
 header {
   width: 100%;
 }
 header .image-logo {
-  padding-top: 15%;
+  padding-top: 12%;
 }
 #logo {
   width: 80px;
 }
 .container {
   margin: 0 auto;
-  text-align: center;
   font-size: 1.25em;
 }
 .box {
@@ -36,9 +42,15 @@ header .image-logo {
   text-align: left;
   margin: 0 auto;
 }
+.font-center {
+  text-align: center;
+}
 ul {
   list-style-type: none;
   padding-left: 0;
+}
+li {
+  text-align: left;
 }
 footer {
   position: absolute;
@@ -57,15 +69,15 @@ footer p {
 </head>
 <body>
   <header>
-    <div class="image-logo container">
+    <div class="image-logo container font-center">
       <img id="logo" src="logo.png" />
     </div>
   </header>
   <section>
-    <article class="container">
+    <article class="container font-center">
       <div><h1>Welcome!</h1></div>
     </article>
-    <article class="container">
+    <article class="container font-center">
       <div class="box">
         <p>There are my project pages</p>
         <ul>
@@ -73,10 +85,6 @@ footer p {
          <li><a href="barcodegen/">Barcode Generate</a></li>
          <li><a href="//www.paboo.org/pchart/">pChart</a></li>
         </ul>
-      </div>
-    </article>
-    <article class="container">
-      <div class="box">
         <p>Some bate toolkit is <a href="http://pan.baidu.com/s/1i3oTkSt">here</a>.</p>
       </div>
     </article>
