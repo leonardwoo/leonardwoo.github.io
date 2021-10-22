@@ -1,4 +1,8 @@
 
+#wapper {
+  min-height: 100%;
+}
+
 .logo svg {
   width : 4rem;
   height: 4rem;
@@ -15,4 +19,20 @@
 .logobox .title h3 {
   font-size: 1.25rem;
   font-weight: 300;
+}
+
+main {
+  padding: 1rem;
+}
+
+.mt-fixed {
+  margin-top: 2rem;
+}
+
+p {
+  margin: 0;
+}
+
+footer {
+  flex: 0 0 auto;
 }

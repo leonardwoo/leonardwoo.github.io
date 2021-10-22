@@ -128,11 +128,18 @@ nav a:focus {
 }
 
 .list {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+}
+.list li {
+  margin-top: .15rem;
+}
+.list li:first-child {
+  margin-top: 0;
 }
 
 footer {
   font-size: .9rem;
   font-weight: 300;
-  padding: 1rem;
+  min-height: 3rem;
+  display: flex;
 }
