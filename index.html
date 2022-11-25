@@ -28,15 +28,10 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
 
-  <link rel="proload" href="/stylesheet/common.css" as="style" />
-  <link rel="stylesheet" type="text/css" href="/stylesheet/common.css" />
   <link rel="proload" href="stylesheet/style.css" as="style" />
-  <link rel="stylesheet" type="text/css" href="/stylesheet/style.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheet/style.css" />
 
   <script src="https://cdn.jsdelivr.net/npm/@iconfu/svg-inject@1.2.3/dist/svg-inject.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@leonardwoo/pika-js@0.1.0/dist/pika.min.js" defer></script>
-
-  <link rel="preload" href="/scripts/script.js" as="script" />
 
 </head>
 <body>
@@ -47,34 +42,35 @@
       </div>
     </div>
   </noscript>
-  <div id="warpper">
-    <main class="flex">
-      <div class="content-box">
-        <div class="text-center box-mt-fixed">
-          <div class="logo">
-            <img src="/images/logo.svg" onload="SVGInject(this);" />
+  <div id="warpper" class="container mx-auto flex justify-center">
+    <div class="w-full">
+      <main class="flex justify-center items-center h-full">
+        <div class="-mt-4">
+          <div class="text-center box-mt-fixed">
+            <div class="logo">
+              <img src="/images/logo.svg" onload="SVGInject(this);" class="select-none" />
+            </div>
+            <h1>Welcome</h1>
+            <ol class="list">
+              <li><a href="anole/" title="A Typecho Theme">Anole</a></li>
+              <li><a href="https://github.com/leonardwoo/mysqlbackup" title="MySQL/MariaDB Backup">MySQL Backup</a></li>
+              <li><a href="https://gitlab.com/leonardwoo/robee" title="Single task CI/CI service">RoBee</a></li>
+              <li><a href="https://github.com/leonardwoo/favicon" title="A CLI tool for favicon images">Favicon</a></li>
+              <li><a href="https://gitlab.com/leonardwoo/emqx-webhook-server" title="A Webhook server for EMQX">EMQX Webhook Server</a></li>
+              <li><a href="https://gitlab.com/leonardwoo/mqttbridge" title="MQTT Bridge for forward">MQTT Bridge</a></li>
+              <li><a href="https://www.npmjs.com/package/@leonardwoo/pika-js" title="A function toolkit">@leonardwoo/pika-js</a></li>
+            </ol>
           </div>
-          <h3>Welcome</h3>
-          <ol class="list">
-            <li><a href="anole/" title="A Typecho Theme">Anole</a></li>
-            <li><a href="https://github.com/leonardwoo/mysqlbackup" title="MySQL/MariaDB Backup">MySQL Backup</a></li>
-            <li><a href="https://gitlab.com/leonardwoo/robee" title="Single task CI/CI service">RoBee</a></li>
-            <li><a href="https://github.com/leonardwoo/favicon" title="A CLI tool for favicon images">Favicon</a></li>
-            <li><a href="https://gitlab.com/leonardwoo/emqx-webhook-server" title="A Webhook server for EMQX">EMQX Webhook Server</a></li>
-            <li><a href="https://gitlab.com/leonardwoo/mqttbridge" title="MQTT Bridge for forward">MQTT Bridge</a></li>
-            <li><a href="https://www.npmjs.com/package/@leonardwoo/pika-js" title="A function toolkit">@leonardwoo/pika-js</a></li>
-          </ol>
         </div>
-      </div>
-    </main>
-
-    <footer>
-      <div class="container mx-auto">
-        <div>Powered by <a href="https://pages.github.com/">Github Pages</a></div>
-        <div>Copyright &copy; 2022 <a class="select-none" href="https://l6d.me/"><span class="animated-btn">Leonard Woo</span></a>. All rights reserved.</div>
-      </div>
-    </footer>
+      </main>
+  
+      <footer class="flex">
+        <div class="">
+          <div>Powered by <a href="https://pages.github.com/">Github Pages</a>.</div>
+          <div>Copyright &copy; 2022 <a class="select-none" href="https://l6d.me/">Leonard Woo</a>. All rights reserved.</div>
+        </div>
+      </footer>
+    </div>
   </div>
-  <script src="/scripts/script.js" defer></script>
 </body>
 </html>

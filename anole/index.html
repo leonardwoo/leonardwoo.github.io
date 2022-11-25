@@ -28,17 +28,10 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
 
-  <link rel="proload" href="/stylesheet/common.css" as="style" />
-  <link rel="stylesheet" type="text/css" href="/stylesheet/common.css" />
-  <link rel="proload" href="stylesheet/style.css" as="style" />
+  <link rel="proload" href="/stylesheet/style.css" as="style" />
   <link rel="stylesheet" type="text/css" href="/stylesheet/style.css" />
-  <link rel="proload" href="stylesheet/page.css" as="style" />
-  <link rel="stylesheet" type="text/css" href="/stylesheet/page.css" />
 
   <script src="https://cdn.jsdelivr.net/npm/@iconfu/svg-inject@1.2.3/dist/svg-inject.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@leonardwoo/pika-js@0.1.0/dist/pika.min.js" defer></script>
-
-  <link rel="preload" href="/scripts/script.js" as="script" />
 
 </head>
 <body>
@@ -49,32 +42,33 @@
       </div>
     </div>
   </noscript>
-  <div id="warpper">
-    <main class="flex">
-      <div class="content-box">
-        <div class="text-center box-mt-fixed">
-          <div class="logo">
-            <img src="/images/logo.svg" onload="SVGInject(this);" />
-          </div>
-          <h3>Anole</h3>
-          <h5>A Typecho Theme</h5>
-          <div class="mt-fixed">
-            <p>Download</p>
-            <ol>
-              <li><a href="https://github.com/leonardwoo/Anole">Github</a></li>
-            </ol>
+  <div id="warpper" class="container mx-auto flex justify-center">
+    <div class="w-full">
+      <main class="flex justify-center items-center h-full">
+        <div class="-mt-4">
+          <div class="text-center box-mt-fixed">
+            <div class="logo">
+              <img src="/images/logo.svg" onload="SVGInject(this);" class="select-none" />
+            </div>
+            <h1>Anole</h1>
+            <h3>A Typecho Theme</h3>
+            <div class="mt-fixed">
+              <p>Download</p>
+              <ol class="list">
+                <li><a href="https://github.com/leonardwoo/Anole">Github</a></li>
+              </ol>
+            </div>
           </div>
         </div>
-      </div>
-    </main>
-
-    <footer>
-      <div class="container mx-auto">
-        <div>Powered by <a href="https://pages.github.com/">Github Pages</a></div>
-        <div>Copyright &copy; 2022 <a class="select-none" href="https://l6d.me/"><span class="animated-btn">Leonard Woo</span></a>. All rights reserved.</div>
-      </div>
-    </footer>
+      </main>
+  
+      <footer class="flex">
+        <div class="">
+          <div>Powered by <a href="https://pages.github.com/">Github Pages</a>.</div>
+          <div>Copyright &copy; 2022 <a class="select-none" href="https://l6d.me/">Leonard Woo</a>. All rights reserved.</div>
+        </div>
+      </footer>
+    </div>
   </div>
-  <script src="/scripts/script.js" defer></script>
 </body>
 </html>

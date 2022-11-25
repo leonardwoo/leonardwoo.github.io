@@ -1,3 +1,5 @@
+@use "commons";
+
 :root {
   --global-background-color                : #FBFBFD;
   /* --global-background-image             : linear-gradient(120deg, #EBEBAA40, #AAEBEA40, #EBAAEA40); */
@@ -19,31 +21,14 @@
   --footer-link-hover-color: #616161;
 }
 
-// @media (prefers-color-scheme: dark) {
-//   :root {
-//     --global-background-color             : #212121;
-//     /* --global-background-image             : linear-gradient(120deg, #EBEBAA40, #AAEBEA40, #EBAAEA40); */
-//     --global-color                        : #FAFAFC;
-//     --link-color                          : #FAFAFC;
-//     --link-hover-background-color         : transparent;
-//     --link-hover-color                    : #18a7e9;
-    
-//     --nav-link-hover-background-color     : #26C6DA;
-//     --nav-link-hover-color                : #424242;
-
-//     --footer-background-color             : transparent;
-//     --footer-color                        : #FAFAFC;
-//     --footer-link-color                   : var(--footer-color);
-//     --footer-link-hover-color             : #B0B0B0;
-//   }
-// }
-
-
 body {
   background-color      : var(--global-background-color);
   /* background-image   :  var(--global-background-image); */
   /* background-position: fixed; */
   color                 : var(--global-color);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
 }
 
 a {
@@ -56,12 +41,8 @@ a:hover {
   color           : var(--link-hover-color);
 }
 
-header {
-  background-color: var(--header-background-color);
-  color: var(--header-color);
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem;
+#warpper {
+  min-height: 100vh;
 }
 
 .logobox {
@@ -75,8 +56,8 @@ header {
 }
 
 .logo svg {
-  width : 6rem;
-  height: 6rem;
+  width : 7rem;
+  height: 7rem;
 }
 
 .logobox .title {
@@ -116,30 +97,33 @@ nav a:focus {
   color: var(--nav-link-hover-color);
 }
 
-.content-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
 .box-mt-fixed {
   margin-top: -10%;
 }
 
 .list {
   margin-top: 1.5rem;
+
+  li {
+    margin-top: .15rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
 }
-.list li {
-  margin-top: .15rem;
-}
-.list li:first-child {
-  margin-top: 0;
+
+.mt-fixed {
+  margin-top: 2rem;
 }
 
 footer {
   font-size: .9rem;
   font-weight: 300;
-  min-height: 3rem;
-  display: flex;
+  margin-top: -3rem;
+
+  div {
+    margin-top: .15rem;
+    margin-bottom: .15rem;
+  }
 }
