@@ -1,4 +1,3 @@
-@use "commons";
 
 :root {
   --global-background-color                : #FBFBFD;
@@ -26,9 +25,7 @@ body {
   /* background-image   :  var(--global-background-image); */
   /* background-position: fixed; */
   color                 : var(--global-color);
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 a {
@@ -77,4 +74,26 @@ footer {
     margin-top: .15rem;
     margin-bottom: .15rem;
   }
+}
+
+.my-2 {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.\-mt-1\/10 {
+  margin-top: -10%;
+}
+
+.leading-normal {
+  line-height: 1.5;
 }

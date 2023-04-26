@@ -27,6 +27,7 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin/>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/seppiko/sable@main/sable-normalize.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/seppiko/sable@main/sable-common.min.css">
 
   <link rel="proload" href="stylesheet/style.css" as="style" />
   <link rel="stylesheet" type="text/css" href="stylesheet/style.css" />
@@ -36,8 +37,27 @@
 </head>
 <body>
   <noscript>
-    <div style="background-color: #FFFFFF;color: #000000;position: fixed;top: 0;left: 0;right: 0;bottom: 0;z-index: 9999;">
-      <div style="font-size: 24px;line-height: 24px;margin: 10%;width: 80%;">
+    <style>
+      .page-shade {
+        background-color: #FFFFFF;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9999;
+      }
+
+      .default-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 18px;
+        line-height: 24px;
+        margin: 10%;
+        width: 80%;
+      }
+    </style>
+     <div class="page-shade">
+      <div class="default-text">
         <p>We've detected that JavaScript is disabled in your browser.You will not be able use this.</p>
       </div>
     </div>
