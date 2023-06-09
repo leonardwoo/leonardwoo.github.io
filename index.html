@@ -85,15 +85,15 @@
       </div>
     </div>
   </noscript>
-  <div id="warpper" class="container mx-auto flex justify-center">
-    <div class="w-full">
-      <main class="flex justify-center items-center h-full">
-        <div class="text-center box-mt-fixed">
-          <div class="logo -mt-1/10">
+  <div id="warpper">
+    <div class="container mx-auto min-h-screen flex flex-col justify-center">
+      <main class="flex-grow container mx-auto flex flex-col justify-center items-center">
+        <div class="-mt-1/10 text-center">
+          <div class="logo">
             <img src="/images/logo.svg" onload="SVGInject(this);" class="select-none" />
           </div>
           <h1 class="my-2">Leonard's Projects</h1>
-          <ol class="list">
+          <ol id="projects" class="list list-none">
             <li><a href="https://github.com/leonardwoo/Anole" title="A Typecho Theme">Anole</a></li>
             <li><a href="https://github.com/leonardwoo/favicon" title="A CLI tool for favicon images">Favicon</a></li>
             <li><a href="https://github.com/leonardwoo/mysqlbackup" title="MySQL/MariaDB Backup">MySQL Backup</a></li>
@@ -107,8 +107,8 @@
         </div>
       </main>
   
-      <footer class="flex">
-        <div class="">
+      <footer class="flex font-light">
+        <div class="py-4">
           <div>Powered by <a href="https://pages.github.com/">Github Pages</a>.</div>
           <div>Copyright &copy; 2023 <a class="select-none" href="https://l6d.me/">Leonard Woo</a>. All rights reserved.</div>
         </div>

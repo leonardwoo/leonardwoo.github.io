@@ -42,10 +42,6 @@ a:hover {
   min-height: 100vh;
 }
 
-.box-mt-fixed {
-  margin-top: -15%;
-}
-
 .logo {
   svg {
     width : 7rem;
@@ -53,9 +49,8 @@ a:hover {
   }
 }
 
-.list {
+#projects {
   margin-top: 1.5rem;
-  list-style: none;
 
   li {
     margin-top: .15rem;
@@ -66,43 +61,13 @@ a:hover {
   }
 }
 
-section,
-article {
-  padding: 3rem 0;
-
-  div, p {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 footer {
   font-size: .9rem;
-  font-weight: 300;
-  margin-top: -3rem;
 
   div {
     margin-top: .15rem;
     margin-bottom: .15rem;
   }
-}
-
-.my-2 {
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-}
-
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.\-mt-1\/10 {
-  margin-top: -10%;
 }
 
 .leading-normal {
