@@ -14,6 +14,9 @@
   --footer-link-hover-color: #616161;
 }
 
+$selection-background-color: #212121;
+$selection-color: #FAFAFC;
+
 body {
   background-color      : var(--global-background-color);
   color                 : var(--global-color);
@@ -61,7 +64,8 @@ footer {
     &:hover {
       background-color: var(--footer-link-hover-background-color);
       color           : var(--footer-link-hover-color);
-      text-decoration: underline;
+      text-decoration-line: underline;
+      text-decoration-color: var(--footer-link-hover-color);
     }
   }
 
@@ -71,6 +75,16 @@ footer {
   }
 }
 
+::selection {
+  background-color: $selection-background-color;
+  color: $selection-color;
+}
+::-moz-selection {
+  background-color: $selection-background-color;
+  color: $selection-color;
+}
+
+/* link animation */
 .animated-link {
   position: relative;
 
