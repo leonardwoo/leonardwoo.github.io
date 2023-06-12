@@ -34,19 +34,15 @@ a {
 }
 
 .logo {
-  svg {
-    width : 10rem;
-    height: 10rem;
-  }
+  width : 10rem;
+  height: 10rem;
 }
 
 #projects {
   margin-top: 1.25rem;
-  display: grid;
-  place-items: center;
 
   li {
-    margin-top: .5rem;
+    margin-top: .75rem;
 
     &:first-child {
       margin-top: 0;
@@ -85,8 +81,14 @@ footer {
 }
 
 /* link animation */
+.animated-box {
+  display: grid;
+  place-items: center;
+}
+
 .animated-link {
   position: relative;
+  padding: 0 .25rem .125rem;
 
   &::before {
     background: var(--link-hover-background-color);
