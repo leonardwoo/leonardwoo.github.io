@@ -74,10 +74,12 @@ footer {
 ::selection {
   background-color: $selection-background-color;
   color: $selection-color;
+  text-shadow: none;
 }
 ::-moz-selection {
   background-color: $selection-background-color;
   color: $selection-color;
+  text-shadow: none;
 }
 
 /* link animation */
