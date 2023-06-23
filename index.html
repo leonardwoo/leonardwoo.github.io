@@ -92,12 +92,16 @@
   </noscript>
   <div id="warpper">
     <div class="container mx-auto min-h-screen flex flex-col justify-center">
-      <main class="flex-grow container mx-auto flex flex-col justify-center items-center">
-        <div class="-mt-1/12 text-center">
+      <header class="flex justify-center">
+        <div class="text-center mt-1/12">
           <div class="logo mx-auto">
             <img class="select-none" src="https://l6d.me/images/logo.svg" onload="SVGInject(this);" />
           </div>
           <h1 class="my-2 text-4xl">Leonard's Projects</h1>
+        </div>
+      </header>
+      <main class="flex-grow flex justify-center">
+        <div class="text-center">
           <ol id="projects" class="list-none text-lg animated-box">
             <li><a href="https://srl.cx/eDg2QtyY" title="A Typecho Theme"><span class="animated-link">Anole</span></a></li>
             <li><a href="https://srl.cx/pqyO2YOE" title="A CLI tool for favicon images"><span class="animated-link">Favicon</span></a></li>
@@ -110,10 +114,9 @@
         </div>
       </main>
   
-      <footer class="flex font-light">
-        <div class="py-4">
-          <div>Powered by <a href="https://pages.github.com/">Github Pages</a>.</div>
-          <div>Copyright &copy; 2023 <a class="select-none" href="https://l6d.me/">Leonard Woo</a>. All rights reserved.</div>
+      <footer class="font-light">
+        <div class="">
+          <p>Copyright &copy; 2023 <a class="select-none" href="https://l6d.me/">Leonard Woo</a>. All rights reserved.</p>
         </div>
       </footer>
     </div>
