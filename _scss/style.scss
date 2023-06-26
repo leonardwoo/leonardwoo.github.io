@@ -33,6 +33,10 @@ a {
 //   }
 }
 
+.logo-box {
+  margin-top: 7%;
+}
+
 .logo {
   width : 10rem;
   height: 10rem;
@@ -61,11 +65,6 @@ footer {
       text-decoration-line: underline;
       text-decoration-color: var(--footer-link-hover-color);
     }
-  }
-
-  div {
-    margin-top: .15rem;
-    margin-bottom: .15rem;
   }
 }
 
