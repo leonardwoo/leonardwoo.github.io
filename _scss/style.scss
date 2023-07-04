@@ -1,4 +1,3 @@
-
 :root {
   --global-background-color: #FBFBFD;
   --global-color: #263238;
@@ -18,51 +17,41 @@ $selection-background-color: #212121;
 $selection-color: #FAFAFC;
 
 body {
-  background-color      : var(--global-background-color);
-  color                 : var(--global-color);
+  background-color: var(--global-background-color);
+  color: var(--global-color);
   font-family: "Noto Sans JP", sans-serif;
 }
 
 a {
   color: var(--link-color);
-  
-//   &:focus,
-//   &:hover {
-    // background-color: var(--link-hover-background-color);
-    // color           : var(--link-hover-color);
-//   }
+
+  //   &:focus,
+  //   &:hover {
+  // background-color: var(--link-hover-background-color);
+  // color           : var(--link-hover-color);
+  //   }
 }
 
 .logo-box {
   margin-top: 7%;
 }
 
+$logo-size: 10rem;
+
 .logo {
-  width : 10rem;
-  height: 10rem;
-}
-
-#projects {
-  li {
-    margin-top: .75rem;
-
-    &:first-child {
-      margin-top: 0;
-    }
-  }
+  width: $logo-size;
+  height: $logo-size;
 }
 
 footer {
-  font-size: .9rem;
 
   a {
     color: var(--footer-link-color);
-    
+
     &:focus,
     &:hover {
       background-color: var(--footer-link-hover-background-color);
-      color           : var(--footer-link-hover-color);
-      text-decoration-line: underline;
+      color: var(--footer-link-hover-color);
       text-decoration-color: var(--footer-link-hover-color);
     }
   }
@@ -73,6 +62,7 @@ footer {
   color: $selection-color;
   text-shadow: none;
 }
+
 ::-moz-selection {
   background-color: $selection-background-color;
   color: $selection-color;
@@ -80,18 +70,13 @@ footer {
 }
 
 /* link animation */
-.animated-box {
-  display: grid;
-  place-items: center;
-}
-
 .animated-link {
   position: relative;
   padding: 0 .25rem .125rem;
 
   &::before {
     background: var(--link-hover-background-color);
-    content: "";
+    content: '';
     inset: 0;
     position: absolute;
     transform: scaleX(0);
