@@ -1,10 +1,10 @@
 :root {
-  --global-background-color: #FBFBFD;
+  --global-background-color: #fbfbfd;
   --global-color: #263238;
 
   --link-color: #212121;
-  --link-hover-background-color: #f0c74c;
-  --link-hover-color: #212121;
+  --link-hover-background-color: #fde047;
+  // --link-hover-color: var(--link-color);
 
   --footer-background-color: transparent;
   --footer-color: #212121;
@@ -13,8 +13,25 @@
   --footer-link-hover-color: #616161;
 }
 
+.dark {
+  --global-background-color: #212121;
+  --global-color: #d7e4eb;
+
+  --link-color: #fafafa;
+  --link-hover-background-color: #ca8a04;
+  // --link-hover-color: #212121;
+
+  --footer-background-color: transparent;
+  --footer-color: #fafafa;
+  --footer-link-color: var(--footer-color);
+  --footer-link-hover-background-color: transparent;
+  --footer-link-hover-color: #616161;
+}
+
 $selection-background-color: #212121;
-$selection-color: #FAFAFC;
+$selection-color: #fafafc;
+$selection-dark-background-color: $selection-color;
+$selection-dark-color: $selection-background-color;
 
 body {
   background-color: var(--global-background-color);
@@ -25,11 +42,11 @@ body {
 a {
   color: var(--link-color);
 
-  //   &:focus,
-  //   &:hover {
-  // background-color: var(--link-hover-background-color);
-  // color           : var(--link-hover-color);
-  //   }
+  // &:focus,
+  // &:hover {
+  //   background-color: var(--link-hover-background-color);
+  //   color: var(--link-hover-color);
+  // }
 }
 
 .logo-box {
@@ -62,10 +79,19 @@ footer {
   color: $selection-color;
   text-shadow: none;
 }
-
 ::-moz-selection {
   background-color: $selection-background-color;
   color: $selection-color;
+  text-shadow: none;
+}
+.dark ::selection {
+  background-color: $selection-dark-background-color;
+  color: $selection-dark-color;
+  text-shadow: none;
+}
+.dark ::-moz-selection {
+  background-color: $selection-dark-background-color;
+  color: $selection-dark-color;
   text-shadow: none;
 }
 
