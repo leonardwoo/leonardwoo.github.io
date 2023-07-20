@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" 
+    width="100%" height="100%" viewBox="0 0 1280 1280" fill="#282828">
+    <defs>
+        <rect id="origin-line" x="286" y="361" width="873" height="64"/>
+    </defs>
+    <g transform="matrix(1.10727,0,0,1.19963,-85.2595,-196.739)">
+        <path d="M1233,430.75C1233,283.527 1103.5,164 944,164L366,164C206.497,164 77,283.527 77,430.75L77,964.25C77,1111.47 
+            206.497,1231 366,1231L944,1231C1103.5,1231 1233,1111.47 1233,964.25L1233,430.75ZM1205.91,430.75L1205.91,964.25C1205.91,1097.67 
+            1088.55,1205.99 944,1205.99C944,1205.99 366,1205.99 366,1205.99C221.45,1205.99 104.094,1097.67 104.094,964.25L104.094,430.75C104.094,297.329 
+            221.45,189.008 366,189.008L944,189.008C1088.55,189.008 1205.91,297.329 1205.91,430.75Z"/>
+    </g>
+    <g transform="matrix(1.024,0,0,1.024,-15.36,-15.36)" class="pika-storke">
+        <g transform="matrix(1.19767,1.19665,-0.331315,0.331598,-95.1118,-354.897)">
+           <use xlink:href="#origin-line" />
+        </g>
+        <g transform="matrix(1.11587,1.11492,-0.331315,0.331598,79.3061,-410.522)">
+            <use xlink:href="#origin-line" />
+        </g>
+        <g transform="matrix(0.870956,0.870212,-0.331315,0.331598,368.768,-351.147)">
+            <use xlink:href="#origin-line" />
+        </g>
+        <g transform="matrix(0.626575,0.626039,-0.331315,0.331598,657.006,-282.314)">
+            <use xlink:href="#origin-line" />
+        </g>
+        <g transform="matrix(0.380662,0.380336,-0.331315,0.331598,942.02,-211.043)">
+            <use xlink:href="#origin-line" />
+        </g>
+    </g>
+    <g transform="matrix(0.000920198,1.024,-1.024,0.000920198,1081.25,209.974)">
+        <g transform="matrix(0.137906,0.137788,-0.331315,0.331598,995.206,-214.953)">
+            <use xlink:href="#origin-line" />
+        </g>
+        <g transform="matrix(0.27009,0.269859,-0.331315,0.331598,842.808,-148.736)">
+            <use xlink:href="#origin-line" />
+        </g>
+        <g transform="matrix(0.41765,0.417293,-0.331315,0.331598,673.026,-79.6091)">
+            <use xlink:href="#origin-line" />
+        </g>
+        <g transform="matrix(0.552806,0.552333,-0.331315,0.331598,514.203,27.9058)">
+            <use xlink:href="#origin-line" />
+        </g>
+        <g transform="matrix(0.594298,0.59379,-0.331315,0.331598,375.381,141.76)">
+            <use xlink:href="#origin-line" />
+        </g>
+        <g transform="matrix(0.547084,0.546616,-0.331315,0.331598,256.508,277.971)">
+            <use xlink:href="#origin-line" />
+        </g>
+        <g transform="matrix(0.407797,0.407449,-0.331315,0.331598,178.921,442.659)">
+            <use xlink:href="#origin-line" />
+        </g>
+        <g transform="matrix(0.272931,0.272698,-0.331315,0.331598,105.822,595.02)">
+            <use xlink:href="#origin-line" />
+        </g>
+        <g transform="matrix(0.152377,0.152247,-0.331315,0.331598,39.5176,734.438)">
+            <use xlink:href="#origin-line" />
+        </g>
+    </g>
+</svg>
