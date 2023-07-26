@@ -1,6 +1,6 @@
 :root {
   --global-background-color: #fbfbfd;
-  --global-color: #263238;
+  --global-color: #212121;
 
   --link-color: #212121;
   --link-hover-background-color: #fde047;
@@ -15,7 +15,7 @@
 
 .dark {
   --global-background-color: #212121;
-  --global-color: #d7e4eb;
+  --global-color: #fbfbfd;
 
   --link-color: #fafafa;
   --link-hover-background-color: #ca8a04;
@@ -25,7 +25,7 @@
   --footer-color: #fafafa;
   --footer-link-color: var(--footer-color);
   --footer-link-hover-background-color: transparent;
-  --footer-link-hover-color: #616161;
+  --footer-link-hover-color: #fbfbfd;
 }
 
 $selection-background-color: #212121;
@@ -36,7 +36,7 @@ $selection-dark-color: $selection-background-color;
 body {
   background-color: var(--global-background-color);
   color: var(--global-color);
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 a {
@@ -61,6 +61,8 @@ $logo-size: 10rem;
 }
 
 footer {
+  background-color: var(--footer-background-color);
+  color: var(--footer-color);
 
   a {
     color: var(--footer-link-color);
