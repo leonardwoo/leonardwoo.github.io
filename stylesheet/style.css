@@ -1,13 +1,10 @@
 :root {
-  --global-background-color: #fbfbfd;
+  --global-background-color: #f8f7f5;
   --global-color: #212121;
 
   --link-color: #212121;
   --link-hover-background-color: #fde047;
-  --link-hover-color: var(--link-color);
 
-  --nav-link-color: ;
-  --nav-link-background-color: ;
   --nav-hover-link-color: inherit;
   --nav-hover-link-background-color: #fde047;
 
@@ -20,11 +17,10 @@
 
 .dark {
   --global-background-color: #212121;
-  --global-color: #fbfbfd;
+  --global-color: #f8f7f5;
 
   --link-color: #fafafa;
   --link-hover-background-color: #ca8a04;
-  --link-hover-color: #212121;
 
   --nav-hover-link-color: inherit;
   --nav-hover-link-background-color: #ca8a04;
@@ -33,7 +29,7 @@
   --footer-color: #fafafa;
   --footer-link-color: var(--footer-color);
   --footer-link-hover-background-color: transparent;
-  --footer-link-hover-color: #fbfbfd;
+  --footer-link-hover-color: #f8f7f5;
 }
 
 body {
@@ -44,12 +40,6 @@ body {
 
 a {
   color: var(--link-color);
-
-  /* &:focus,
-  &:hover {
-    background-color: var(--link-hover-background-color);
-    color: var(--link-hover-color);
-  } */
 }
 
 .logo-box {
@@ -99,8 +89,6 @@ footer {
 }
 
 .nav-link {
-  /* top | left and right | bottom */
-  /* top and bottom | left and right */
   padding: .25rem .75rem; 
 
   &:hover {
