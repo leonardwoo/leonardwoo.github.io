@@ -19,6 +19,5 @@ export default defineConfig({
       cssMinify: true,
     },
   },
-  outDir: 'public',
   publicDir: 'static',
 });
