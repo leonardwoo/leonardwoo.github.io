@@ -1,5 +1,4 @@
 ---
-import '../styles/aonote.css';
 import { site } from '../site.config';
 import { siteHref } from '../utils/paths';
 import { t, type Locale } from '../i18n';
@@ -43,7 +42,6 @@ function navCurrent(path: string) {
   const href = siteHref(normalized);
   if (path === '/') return pageId === 'index';
   if (normalized === '/about/') return pageId === 'about';
-  // if (normalized === '/archive/') return pageId === 'archive';
   if (normalized === '/tags/') return pageId === 'tags';
   return normalizePath(currentPath) === href;
 }
@@ -95,6 +93,7 @@ function navCurrent(path: string) {
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/leonardwoo/pikacss@dev/dist/pikacss-normalize.min.css" />
+
     <link rel="stylesheet" href="/styles/aonote.css">
   </head>
   <body class={`page-${pageId}`}>
@@ -105,7 +104,6 @@ function navCurrent(path: string) {
         <a href={homeHref} class="site-title">{site.title}</a>
         <nav class="desktop-nav" aria-label={i18n.mainNavigation}>
           <a href={siteHref('/')} aria-current={navCurrent('/') ? 'page' : undefined}>{i18n.navHome}</a>
-          <!-- <a href={siteHref('/archive/')} aria-current={navCurrent('/archive') ? 'page' : undefined}>{i18n.navArchive}</a> -->
           <a href={siteHref('/tags/')} aria-current={navCurrent('/tags') ? 'page' : undefined}>{i18n.navTags}</a>
           <a href={siteHref('/about/')} aria-current={navCurrent('/about') ? 'page' : undefined}>{i18n.navAbout}</a>
         </nav>
@@ -116,7 +114,6 @@ function navCurrent(path: string) {
           </summary>
           <nav class="mobile-nav-links" aria-label={i18n.mainNavigation}>
             <a href={siteHref('/')} aria-current={navCurrent('/') && pageId === 'index' ? 'page' : undefined}>{i18n.navHome}</a>
-            <!-- <a href={siteHref('/archive/')} aria-current={navCurrent('/archive') ? 'page' : undefined}>{i18n.navArchive}</a> -->
             <a href={siteHref('/tags/')} aria-current={navCurrent('/tags') ? 'page' : undefined}>{i18n.navTags}</a>
             <a href={siteHref('/about/')} aria-current={navCurrent('/about') ? 'page' : undefined}>{i18n.navAbout}</a>
           </nav>
