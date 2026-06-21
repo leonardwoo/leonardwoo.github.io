@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getEntry, render } from 'astro:content';
+
+const entry = await getEntry('pages', '404');
+if (!entry) throw new Error('Missing src/content/pages/404.md');
+const { Content } = await render(entry);
+---
+
+<BaseLayout title="404" pageId="404" noindex>
+  <div class="post-content">
+    <Content />
+  </div>
+</BaseLayout>

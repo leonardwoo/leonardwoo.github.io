@@ -1,3 +1,3 @@
-# Leonard Projects
+# Leonard Blog
 
-http://projects.l6d.me/
+http://blog.l6d.me/
