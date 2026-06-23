@@ -11,12 +11,15 @@ export default defineConfig({
   site: site.baseUrl,
   base: site.repoSubpath || undefined,
   trailingSlash: 'always',
-  integrations: [aonoteMarkdown(), sitemap({
-    filter: (page) => !page.includes('/404'),
-  }), vue()],
+  integrations: [aonoteMarkdown(), 
+    sitemap({
+      filter: (page) => !page.includes('/404'),
+    }), 
+    vue()
+  ],
   vite: {
     build: {
-      cssMinify: true,
+      // cssMinify: true,
     },
   },
   publicDir: 'static',
