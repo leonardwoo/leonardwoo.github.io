@@ -4,8 +4,6 @@ import sitemap from '@astrojs/sitemap';
 import { aonoteMarkdown } from './src/integrations/aonote-markdown.ts';
 import { site } from './src/site.config.ts';
 
-import vue from '@astrojs/vue';
-
 /** @type {import('astro').AstroUserConfig} */
 export default defineConfig({
   site: site.baseUrl,
@@ -14,8 +12,7 @@ export default defineConfig({
   integrations: [aonoteMarkdown(), 
     sitemap({
       filter: (page) => !page.includes('/404'),
-    }), 
-    vue()
+    })
   ],
   vite: {
     build: {

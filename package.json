@@ -29,9 +29,8 @@
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",
-    "@astrojs/sitemap": "^3.7.3",
-    "@astrojs/vue": "^7.0.0",
-    "astro": "^7.0.0",
+    "@astrojs/sitemap": "^3.7.2",
+    "astro": "^6.3.7",
     "hast-util-from-html": "^2.0.3",
     "image-size": "^2.0.2",
     "mdast-util-to-string": "^4.0.0",
@@ -44,8 +43,7 @@
     "remark-parse": "^11.0.0",
     "temml": "^0.13.2",
     "unified": "^11.0.5",
-    "unist-util-visit": "^5.0.0",
-    "vue": "^3.5.38"
+    "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.9",
