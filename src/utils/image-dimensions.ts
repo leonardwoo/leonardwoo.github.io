@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import sizeOf from 'image-size';
+import probe from 'probe-image-size';
 
 export function resolveImagePath(
   src: string,
@@ -23,12 +23,12 @@ export function resolveImagePath(
   return null;
 }
 
-export function readImageDimensions(
+export async function readImageDimensions(
   filePath: string,
-): { width: number; height: number } | null {
+): Promise<{ width: number; height: number; } | null> {
   try {
     if (!fs.existsSync(filePath)) return null;
-    const result = sizeOf(fs.readFileSync(filePath));
+    const result = await probe(fs.readFileSync(filePath));
     if (result.width && result.height) {
       return { width: result.width, height: result.height };
     }
